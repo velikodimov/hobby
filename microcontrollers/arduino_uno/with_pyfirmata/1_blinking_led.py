@@ -1,6 +1,5 @@
-from board_settings import board
 import time
-
+from board_settings import board
 
 while True:
 
