@@ -20,3 +20,8 @@ I created the following files by following the examples in https://realpython.co
 * **3_read_analog_input2.py**: This example extends the previous one. Reads the analog input at pin A0 which is varied using a potentiometer and changes the on and off time of the led connected to pin 13. See 3_read_anaog_input2.png for the circuit. 
 * **4_use_analog_outputs.py**: This exercise shows how to use the use pulse width modulation (PWD) to modify the brightness of a led. See 4_use_analog_outputs.png for the circuit. I used my multimeter to measure the percentage of the on time across the led and it was quite consistent with the printed analog value. (0.2 --> 20%, 0.5 --> 50 % and so on)
 
+
+## Exploring different things
+
+* **5_accelerometer_readings.py**: This exmple requres an accelerometer. I used ADXL335 Module (see https://lastminuteengineers.com/adxl335-accelerometer-arduino-tutorial/). I connected x output to A0, y to A1 and z to A2. I tried to feed the accelerometer module both 3.3 V and 5 V. It worked in both cases. I did not experiment enough if there was a difference. The script gets the x, y and z readings and prints. It looks like the readings are changing only when there is acceleration (well, that's what the name of the module suggests as well.)
+
