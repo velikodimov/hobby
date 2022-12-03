@@ -1,8 +1,5 @@
-import pyfirmata
+from board_settings import board
 import time
-
-
-board = pyfirmata.Arduino("/dev/cu.usbmodem1421")
 
 
 while True:

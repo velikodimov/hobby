@@ -1,7 +1,6 @@
 import pyfirmata
 import time
-
-board = pyfirmata.Arduino("/dev/cu.usbmodem1421")
+from board_settings import board
 
 
 it = pyfirmata.util.Iterator(board)
