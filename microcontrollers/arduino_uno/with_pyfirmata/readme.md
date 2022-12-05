@@ -32,3 +32,5 @@ Here are some other things I tried.
 
 * **6_passive_infrared_sensor.py**:  This example shows how to use a passive infrared (PIR)sensor. This sensor can detect the motion of humans and animals. I used HC-SR501 in my circuit. See 6_passive_infrared_sensor.png for the circuit and 6_pir_sensor_connection_and_adjustment.png how to adjust the delay and the sensitivity of the PIR sensor. 
 
+* **7_get_joystick_readings.py**: using a X-Y joystick and getting its values. you can I used a X-Y Joystick modul explained in this link https://makerselectronics.com/product/joystick-module-x-y. The joystick I have uses the same coordinate system as the computer monitors where the coordinate system has the origin (0, 0) at the top left corner of the screen, which increases going down (y direction) and to the right (x direction). See joystick_cirquit.png for the circuit. The pull-up resistor is very important to put. Otherwise the reading of the button jumps between 0 and 1. 
+
