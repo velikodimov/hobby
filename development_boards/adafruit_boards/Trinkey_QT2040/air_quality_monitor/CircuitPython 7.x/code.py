@@ -6,15 +6,15 @@ import time
 import board
 import usb_cdc
 import adafruit_scd4x
-from adafruit_bme280 import basic as adafruit_bme280
 import neopixel
+from adafruit_bme280 import basic as adafruit_bme280
 
-#--| User Config |-----------------------------------
+# --| User Config |-----------------------------------
 DATA_FORMAT = "JSON"    # data format, CSV or JSON
-DATA_RATE = 5           # data read rate in secs
-BEAT_COLOR = 0xADAF00   # neopixel heart beat color
-BEAT_RATE = 1           # neopixel heart beat rate in secs, 0=none
-#----------------------------------------------------
+DATA_RATE = 5          # data read rate in secs
+BEAT_COLOR = 0x000100   # neopixel heart beat color
+BEAT_RATE = 1        # neopixel heart beat rate in secs, 0=none
+# ----------------------------------------------------
 
 # check that USB CDC data has been enabled
 if usb_cdc.data is None:
@@ -62,7 +62,7 @@ while True:
 
     # heart beat
     if BEAT_RATE and current_time - last_beat > BEAT_RATE:
-        if pixel[0][0]:
+        if pixel[0][1]: # will check green color
             pixel.fill(0)
         else:
             pixel.fill(BEAT_COLOR)
