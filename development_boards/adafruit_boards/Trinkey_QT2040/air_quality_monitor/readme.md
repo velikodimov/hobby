@@ -9,4 +9,14 @@ I used CircuitPython sender explained here: https://learn.adafruit.com/diy-trink
 
 I am putting the code that needs to be put in trinkey here for convenience. See CircuitPython 7.x
 
+There are two other Python files in this folder. 
+* **read_from_trinkey_and_print.py**: will read from trinkey (data needs to be published in JSON format, see code.py under CircuitPython 7.x) and print the data. 
+* **"read_from_trinkey_write_to_file.py**: will read from trinkey (data needs to be published in JSON format, see code.py under CircuitPython 7.x) and write the data into a csv file together with date and time. 
+
+While using these scripts, it's iportant to define the serial port correclty. The scripts can print the available serial ports using with line: print(list_ports.main()):
+
+**requirements.txt** contains the libraries needed to run the two scripts mentioned above. 
+
+
+
 
