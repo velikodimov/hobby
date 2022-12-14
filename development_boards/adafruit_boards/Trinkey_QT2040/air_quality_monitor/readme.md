@@ -2,7 +2,11 @@ See the following website for the components needed: https://learn.adafruit.com/
 
 The project is well explained in the website. The instructions and the code is given there too. 
 
+
+The board can send the data measured by the sensors and you can get read them and use them. 
 I used CircuitPython sender explained here: https://learn.adafruit.com/diy-trinkey-no-solder-air-quality-monitor/circuitpython
 
+
+I am putting the code that needs to be put in trinkey here for convenience. See CircuitPython 7.x
 
 
